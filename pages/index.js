@@ -1,3 +1,4 @@
+import Layout from '../components/layout/Layout';
 import MeetupList from '../components/meetups/MeetupList'
 
 
@@ -23,8 +24,10 @@ function HomePage() {
 
 
     return (
-    
-       <MeetupList meetups={DUMMY_MEETUPS}/>
+    <Layout>
+        <MeetupList meetups={DUMMY_MEETUPS}/>       
+    </Layout>
+      
           
     )
 }
